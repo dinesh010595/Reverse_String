@@ -65,7 +65,7 @@
           <av:Size x:Key="ShapeSize">200,66</av:Size>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence sap:VirtualizedContainerService.HintSize="376,351" sap2010:WorkflowViewState.IdRef="Sequence_1">
+      <Sequence sap:VirtualizedContainerService.HintSize="376,383" sap2010:WorkflowViewState.IdRef="Sequence_1">
         <Sequence.Variables>
           <Variable x:TypeArguments="x:String" Name="input" />
           <Variable x:TypeArguments="x:String" Name="outPut" />
@@ -91,7 +91,7 @@
             <InArgument x:TypeArguments="x:String">[New String(input.ToCharArray().Reverse().ToArray())]</InArgument>
           </Assign.Value>
         </Assign>
-        <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" Buttons="Ok" DisplayName="Message box" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[outPut]" TopMost="True" />
+        <ui:LogMessage DisplayName="String" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[outPut]" />
       </Sequence>
     </FlowStep>
   </Flowchart>
